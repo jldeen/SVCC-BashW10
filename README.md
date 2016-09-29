@@ -1,5 +1,5 @@
 # SVCC-BashW10
-#https://www.siliconvalley-codecamp.com/Session/2016/getting-started-with-bash-on-windows-10
+https://www.siliconvalley-codecamp.com/Session/2016/getting-started-with-bash-on-windows-10
 
 In this session we will cover some new features in Windows 10 and, more specifically, the addition of BASH on Ubuntu to the Windows offering. We will cover what it is and how it works on Windows, and ultimately how to get BASH up and running on Windows 10. We will also show some cool things you can do with it like setup SSH access to your BASH instance, play with colors and graphical interaction, and even setup an X11 server to run x11 and GTK apps. We will also touch on how to use Visual Studio Code with a bash shell integrated terminal right from your Windows 10 desktop, which will allow you to edit and test your shell scripts right without ever leaving the open source text editor.
 
