@@ -60,6 +60,7 @@ BASH ON WINDOWS 10 – WINDOWS SUBSYSTEM FOR LINUX DEMO
             3. chmod 700 .ssh
             4. chmod 600 .ssh/authorized_keys
             5. rm .ssh/id_rsa.pub
+            6. ssh add [key name]
 
             To connect to your system running Bash on Ubuntu on Windows (server) from your client, run the following:
 
