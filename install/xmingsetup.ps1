@@ -16,9 +16,9 @@ $cancel = New-Object System.Management.Automation.Host.ChoiceDescription "&Cance
 
 $options = [System.Management.Automation.Host.ChoiceDescription[]]($xming, $vcxsrv, $cancel)
 
-$result = $host.ui.PromptForChoice($title, $message, $options, 0) 
+$install = $host.ui.PromptForChoice($title, $message, $options, 0) 
 
-switch ($result)
+switch ($install)
     {
         0 {
             Write-Host "You selected Xming."
