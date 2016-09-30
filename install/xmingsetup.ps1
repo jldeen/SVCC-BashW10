@@ -34,5 +34,4 @@ switch ($install)
     }
 
 #install x11-apps
-chmod +x x11_install.sh
 bash x11_install.sh
