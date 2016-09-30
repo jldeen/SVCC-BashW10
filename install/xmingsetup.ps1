@@ -32,6 +32,3 @@ switch ($install)
             Write-Host "Canceling and exiting installation process!";Exit
         }
     }
-
-#install x11-apps
-bash x11_install.sh
