@@ -69,16 +69,11 @@ BASH ON WINDOWS 10 – WINDOWS SUBSYSTEM FOR LINUX DEMO
             Toilet
                 toilet -f mono12 -F "Hello SVCC!"
         x11 Server Setup
-            Install Xming or VcXsrv
-                https://sourceforge.net/projects/xming/
-                https://sourceforge.net/projects/vcxsrv/
-
-                Can also do via chocolatey
-                    https://chocolatey.org/install
-                        choco install Xming
-                        choco install VcXsrv
+            Run the install script in install folder
+            
             Demo x11 Apps
-                install x11-apps
+                sudo apt-get install x11-apps
+                #list of x11-apps
                     http://packages.ubuntu.com/trusty/i386/x11-apps/filelist
                 echo 'export DISPLAY=:0' >> ~/.bashrc && . ~/.bashrc
 	            sudo sed -i 's$<listen>.*</listen>$<listen>tcp:host=localhost,port=0</listen>$' /etc/dbus-1/session.conf
