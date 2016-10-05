@@ -1,0 +1,9 @@
+// Place your settings in this file to overwrite the default settings
+
+//PS 64
+{"terminal.integrated.shell.linux": "/usr/bin/powershell"
+}
+
+//bash
+// {"terminal.integrated.shell.linux": "/bin/bash",
+// }

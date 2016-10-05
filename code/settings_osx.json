@@ -1,0 +1,10 @@
+// Place your settings in this file to overwrite the default settings
+
+//PowerShell
+{ "terminal.integrated.shell.osx": "/usr/local/bin/powershell",
+}
+
+ 
+//bash
+// {   "terminal.integrated.shell.linux": "/bin/bash",
+// }

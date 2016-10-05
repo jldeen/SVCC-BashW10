@@ -43,28 +43,15 @@ BASH ON WINDOWS 10 – WINDOWS SUBSYSTEM FOR LINUX DEMO
             Do this from client machine (system tunneling to Bash on Ubuntu on Windows):
             1. cd ~/.ssh
             2. ssh-keygen -t rsa
-
-            [Pause to complete step 1 on server side]
-
-            3. scp -P “port-goes-here” ~/.ssh/id_rsa.pub username@server-ip-address:~/.ssh
-            * Tip – If you have trouble copying the .pub file to your server, you might want to temporarily enable PasswordAuth on the server (using the above instructions) to complete the scp transfer and then disable PasswordAuth promptly after.
-            
-            [Proceed to complete steps 2 – 5 on server side]
-
-            Do this from server machine (system running Bash on Ubuntu on Windows):
-            1. mkdir -p ~/.ssh/
-            
-            [Pause to complete step 3 on client side]
-
-            2. cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-            3. chmod 700 .ssh
-            4. chmod 600 .ssh/authorized_keys
-            5. rm .ssh/id_rsa.pub
-            6. ssh add [key name]
+            3. ssh-add [keynamehere]
+            3. cat ~/.ssh/keynamehere.pub | ssh [username]@[ip-address-here] -p 222 'umask 0077; mkdir -p .ssh; cat >> .ssh/authorized_keys && echo "Key copied"'
 
             To connect to your system running Bash on Ubuntu on Windows (server) from your client, run the following:
 
-            ssh username@server-ip-address -p “your-port-here”
+            ssh username@server-ip-address -p “your-port-here” and you should be able to connect now without a Password
+
+            ** Remember to update your /etc/ssh/sshd_config file, disable PasswordAuthentication, and restart the service by typing sudo service ssh restart
+
         Colors / Graphics Demo
             Cmatrix
             Toilet
@@ -100,4 +87,4 @@ BASH ON WINDOWS 10 – WINDOWS SUBSYSTEM FOR LINUX DEMO
                 //bash
                 {"terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe",
                 }
-
+            * Also see settings files under "code" folder in project

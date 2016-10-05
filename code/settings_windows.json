@@ -1,0 +1,13 @@
+// Place your settings in this file to overwrite the default settings
+
+//CMD
+// {"terminal.integrated.shell.windows": "C:\\WINDOWS\\system32\\cmd.exe"
+// }
+
+//PS 64
+{"terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\WindowsPowerShell\\v1.0\\powershell.exe"
+}
+
+//bash
+// {"terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe",
+// }
