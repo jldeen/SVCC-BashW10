@@ -1,4 +1,4 @@
-# Watch the Channel 9 Video of the Demo at aka.ms/learnlxss
+# Watch the Channel 9 Video of the Demo at https://aka.ms/learnlxss
 
 # SVCC-BashW10
 https://www.siliconvalley-codecamp.com/Session/2016/getting-started-with-bash-on-windows-10
